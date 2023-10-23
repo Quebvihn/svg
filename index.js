@@ -23,12 +23,16 @@ let shapeChoice;
     shapeChoice = new Circle();
     svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeBackgroundColor}"/>`;
   }
-  
+
   svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
   
   svgString += "</g>";
   
   svgString += "</svg>";
+  
+  fs.writeFile(fileName, svgString, (err) => {
+    err ? console.log(err) : console.log("Generated logo.svg");
+  });
 }
 function questions() {
     inquirer
