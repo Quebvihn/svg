@@ -29,8 +29,8 @@ let shapeChoice;
   svgString += "</g>";
   
   svgString += "</svg>";
-  
-  fs.writeFile(fileName, svgString, (err) => {
+
+  fs.writeFile(filename, svgString, (err) => {
     err ? console.log(err) : console.log("Generated logo.svg");
   });
 }
