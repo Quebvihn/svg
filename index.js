@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
+const { Triangle, Square, Circle } = require("./lib/shapes");
 
 function questions() {
     inquirer
@@ -31,6 +31,13 @@ function questions() {
           },
       ])
       .then((answers) => {
+        if (answers.text.length > 3) {
+            console.log("Must enter a value of no more than 3 characters");
+            promptUser();
+          } else {
+            
+            writeToFile("logo.svg", answers);
+          }
     })
 }
 
