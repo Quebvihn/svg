@@ -65,7 +65,7 @@ function questions() {
       .then((answers) => {
         if (answers.text.length > 3) {
             console.log("Must enter a textof upto 3 characters");
-            promptUser();
+            questions();
           } else {
             
             writeToFile("logo.svg", answers);
