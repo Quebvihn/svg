@@ -23,7 +23,15 @@ function questions() {
               "Choose text color (Enter color keyword OR a hexadecimal number)",
             name: "textColor",
           },
+          {
+            type: "input",
+            message:
+              "Choose shapes color (Enter color keyword OR a hexadecimal number)",
+            name: "shapeBackgroundColor",
+          },
       ])
       .then((answers) => {
     })
 }
+
+questions()
