@@ -16,6 +16,8 @@ SVG Logo Maker is a Node.js project that allows you to create custom SVG logos w
 ![SVG Logo Ex 1](./examples/circle.svg)
 ![SVG Logo Ex 2](./examples/square.svg)
 ![SVG Logo Ex 3](./examples/triangle.svg)
+[Video Preview](https://drive.google.com/file/d/1MwnuKVw8GmpwdqFnSf_KMUnnV2I9Sy-I/view)
+
 
 
 ## Contributing
